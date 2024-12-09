@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+body{
+    font-family: 'Cinzel', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vh;
+    background: linear-gradient(72deg, #adaaaa 1%, #000000 99%);
+}
+
+html{
+    height: 100%;
+}
+
+.logo{
+    margin-top: -2px;
+    height:100px ;
+    width:120px ;
+
+}
+
+header{
+    height:10vh;
+    width: 203%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#161616 ;
+    box-shadow: 0 0 1rem black;
+
+}
+
+ul{
+    display: flex;
+    margin: 23px;
+}
+
+li{
+    font-size: 25px;
+    color: rgb(177, 177, 177);
+    list-style-type: none;
+    cursor: pointer;
+    padding-left: 2rem;
+    margin-top: 10px;
+}
+
+li:hover{ 
+    color: rgb(112, 112, 112);
+}
+
+a:link {
+    color: none;
+    text-decoration: none;
+}
+
+a:visited{
+    color: nond;
+}
+
+.box-cad{
+    width: 400px;
+    height: 500px;
+    background-color: #131313a9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+}   
+
+.box-img{
+    display: flex;
+    align-items: center;
+}
+
+.box-cad .boneco{
+    background-image: url(imagens/usuario.png);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 65px;
+    margin-bottom: 10px;
+}
+
+.box-cad label{
+    display: block;
+    color: #ffff;
+}
+
+.box-cad input[type='text'], input[type='password']{ /*vai pegar todos inputs do tipo text e password*/
+    width:100% ;
+    line-height: 25px;
+    border: none;
+} 
+
+.box-cad input[type='text']{
+    margin-bottom: 20px;
+}
+
+.box-cad a{
+    color: #b90909;
+    display: block;
+    margin-bottom: 80px;
+}
+
+.box-cad input[type='submit']{ /*botão para cadastrar*/
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #b90909;
+    color: #adaaaa;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.box-cad input[type=checkbox]{
+    cursor: pointer;
+}
+
+.box-img h2{
+    color: #ffff;
+}

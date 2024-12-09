@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+body{
+    font-family: 'Cinzel', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vh;
+    background: linear-gradient(72deg, #adaaaa 1%, #000000 99%);
+}
+
+.logo{
+    margin-top: -2px;
+    height:100px ;
+    width:120px ;
+
+}
+
+header{
+    height:10vh;
+    width: 203%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#161616 ;
+    box-shadow: 0 0 1rem black;
+
+}
+
+ul{
+    display: flex;
+    margin: 23px;
+}
+
+li{
+    font-size: 25px;
+    color: rgb(177, 177, 177);
+    list-style-type: none;
+    cursor: pointer;
+    padding-left: 2rem;
+    margin-top: 10px;
+    transition: .1s; 
+}
+
+li:hover{ 
+    color: rgb(112, 112, 112);
+}
+
+a:link {
+    color: none;
+    text-decoration: none;
+}
+
+a:visited{
+    color: nond;
+}
+
+.content {
+    height: 600px;
+    width: 1000px; 
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*reajustar imagem deixando-a centralizada*/
+}
+
+.navigation, .navigation-auto{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar, .navigation-auto div{ /* icones da navegação*/
+    width: 70px;
+    height: 17px;
+    border: 2px solid #ffff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s; 
+}
+
+.bar:hover{ /*transição*/
+    background-color: white;
+}
+
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img { /*imagem do slide*/
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{ /*# pois é id slide e não para classe */
+margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%; /*- para imagem ir para esquerda*/
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%; /*- para imagem ir para esquerda*/
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -60%; /*- para imagem ir para esquerda*/
+}
+
+#slide1:checked ~ .navigation-auto .auto-btn1 { /*essa função serve para que toda vez que passe de slide a cor do icone mude junto*/
+    background-color: #fff;
+}
+
+#slide2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+
+#slide3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#slide4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
